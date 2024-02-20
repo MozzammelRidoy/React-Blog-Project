@@ -1,0 +1,53 @@
+[
+    {
+      "id": 123456,
+      "cover": "https://i.ibb.co/HGRq8V9/lautaro-andreani-xk-Baqlcqeb4-unsplash.jpg",
+      "title": "The Secret Garden",
+      "author": "Emily Johnson",
+      "author_img": "https://i.ibb.co/9njxQdb/Screenshot-2024-02-20-130205.png",
+      "posted_date": "January 15, 2024",
+      "reading_time": 20,
+      "hashtags": ["#fiction", "#classics", "#gardening"]
+    },
+    {
+      "id": 789012,
+      "cover": "https://i.ibb.co/WVk6WrY/pexels-realtoughcandycom-11035481.jpg",
+      "title": "Beyond the Stars",
+      "author": "David Smith",
+      "author_img": "https://i.ibb.co/RH4Kx9x/Screenshot-2024-02-20-130118.png",
+      "posted_date": "February 5, 2024",
+      "reading_time": 30,
+      "hashtags": ["#scifi", "#adventure", "#space"]
+    },
+    {
+      "id": 345678,
+      "cover": "https://i.ibb.co/t49cJxG/programming-script-text-coding-word.jpg",
+      "title": "The Enigma of the Sphinx",
+      "author": "Sarah Thompson",
+      "author_img": "https://i.ibb.co/Y0DBPdZ/Screenshot-2024-02-20-130251.png",
+      "posted_date": "March 10, 2024",
+      "reading_time": 25,
+      "hashtags": ["#mystery", "#history", "#sphinx"]
+    },
+    {
+      "id": 901234,
+      "cover": "https://i.ibb.co/603nT29/pexels-realtoughcandycom-11035471.jpg",
+      "title": "Whispers in the Dark",
+      "author": "Michael Andrews",
+      "author_img": "https://i.ibb.co/6rkh6w0/Screenshot-2024-02-20-130046.png",
+      "posted_date": "April 20, 2024",
+      "reading_time": 15,
+      "hashtags": ["#thriller", "#suspense", "#dark"]
+    },
+    {
+      "id": 567890,
+      "cover": "https://i.ibb.co/T03LJ0s/html-system-websites-concept.jpg",
+      "title": "The Art of Cooking",
+      "author": "Julia Rodriguez",
+      "author_img": "https://i.ibb.co/C04DnF8/Screenshot-2024-02-20-130404.png",
+      "posted_date": "May 5, 2024",
+      "reading_time": 15,
+      "hashtags": ["#cookbook", "#recipes", "#foodie"]
+    }
+  ]
+  

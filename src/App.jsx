@@ -1,13 +1,14 @@
 
 import './App.css'
+import Blogs from './Componant/Blogs/Blogs'
+import Header from './Componant/Header/Header'
 
 function App() {
 
   return (
     <>
- <h1 className="text-3xl bg-red-700 font-bold underline">
-      Hello world!
-    </h1>
+    <Header></Header>
+    <Blogs></Blogs>
     </>
   )
 }
