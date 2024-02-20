@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
-const Blog = ({blog}) => {
-    console.log(blog);
+import { FaRegBookmark } from "react-icons/fa6";
+
+const Blog = ({blog, handleAddToBookmarks, handleMarkAsRead}) => {
+    // console.log(blog);
     const {cover, title, reading_time, posted_date, author_img, author, hashtags} = blog;
     return (
-        <div className='mb-8 md:mb-20'>
-            <img className="w-full mb-8 rounded-lg" src={cover} alt={`Cover Picture of the title ${title}`} />
+        <div className='mb-8 md:mb-20 space-y-4'>
+            <img className="w-full mb-4 rounded-lg" src={cover} alt={`Cover Picture of the title ${title}`} />
             <div className='flex justify-between items-center mb-4'>
                 <div className='flex justify-center items-center'>
                         <img className='w-14 rounded-full h-14 border-2' src={author_img} alt="" />
@@ -13,8 +15,9 @@ const Blog = ({blog}) => {
                             <p>{posted_date}</p>
                         </div>
                 </div>
-                <div>
-                        <span>{reading_time} min read</span>
+                <div className='flex justify-center items-center'>
+                        <span>{reading_time} min read </span>
+                        <button onClick={()=>handleAddToBookmarks(blog)} className='ml-2 text-1xl md:text-2xl'><FaRegBookmark></FaRegBookmark></button>
                 </div>
             </div>
             <h2 className="text-2xl md:text-3xl mb-6">{title}</h2>
@@ -23,6 +26,7 @@ const Blog = ({blog}) => {
                     hashtags.map((hash, idx) => <span key={idx}> <a href='#'>{hash} </a> </span>)
                 }
             </p>
+            <button className='text-purple-600 text-sm font-semibold underline ' onClick={()=> handleMarkAsRead(reading_time)}>Mark As Read</button>
             
         </div>
     );
@@ -30,6 +34,8 @@ const Blog = ({blog}) => {
 
 
 Blog.propTypes = {
-    blog: PropTypes.object
+    blog: PropTypes.object,
+    handleAddToBookmarks: PropTypes.func,
+    handleMarkAsRead: PropTypes.func
 }
 export default Blog;
